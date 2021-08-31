@@ -104,7 +104,7 @@ class WordBook
      */
     private function pushWord($word)
     {
-        $params = [ 'q' => $word, 'tags'=> 'Alfred' ];
+        $params = [ 'q' => $word ];
         $url = self::ADD_WORD_URL . http_build_query($params);
 
         $header = $this->buildHeader();
